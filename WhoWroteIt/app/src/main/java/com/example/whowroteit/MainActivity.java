@@ -17,8 +17,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mBookInput = (EditText)findViewById(R.id.bookInput);
+        mTitleText = (TextView)findViewById(R.id.titleText);
+        mAuthorText = (TextView)findViewById(R.id.authorText);
+
     }
 
     public void searchBooks(View view) {
+        String queryString = mBookInput.getText().toString();
+        //In MainActivity, add this line to the end of the searchBooks() method to launch the background task with the execute() method and the query string.
+        new FetchBooks(mTitleText, mAuthorText).execute(queryString);
     }
 }
