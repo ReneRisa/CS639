@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 /**
  * The SimpleAsyncTask app contains a button that launches an AsyncTask
@@ -12,6 +13,7 @@ import android.widget.TextView;
  */
 public class MainActivity extends AppCompatActivity {
     private TextView mTextView;
+    private ProgressBar progressBar;
     private static final String TEXT_STATE = "currentText";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //  Initialize mTextView
         mTextView = findViewById(R.id.textView1);
+        progressBar = findViewById(R.id.progressBars);
         // Restore TextView if there is a savedInstanceState
         if(savedInstanceState!=null) {
             mTextView.setText(savedInstanceState.getString(TEXT_STATE));

@@ -3,11 +3,14 @@ package com.example.simpleasynctask;
 import android.os.AsyncTask;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.lang.ref.WeakReference;
 import java.util.Random;
 
-public class SimpleAsyncTask extends AsyncTask<Void, Void, String> {
+public class SimpleAsyncTask extends AsyncTask<Void, Integer, String> {
     private WeakReference<TextView> mTextView;
+
 
     SimpleAsyncTask(TextView tv){
         mTextView = new WeakReference<>(tv);
@@ -17,6 +20,7 @@ public class SimpleAsyncTask extends AsyncTask<Void, Void, String> {
         Random r = new Random();
         int n = r.nextInt(11);
          int s = n * 200;
+         publishProgress(s);
          try {
              Thread.sleep(s);
          }catch (InterruptedException e){
@@ -31,5 +35,11 @@ public class SimpleAsyncTask extends AsyncTask<Void, Void, String> {
         // we use get() because we are using a weakreference otherwise we would not use it.
         //Because mTextView is a weak reference, you have to deference it with the get() method to get the underlying TextView object, and to call setText() on it.
         mTextView.get().setText(s);
+    }
+
+    @Override
+    protected void onProgressUpdate(Integer... values) {
+        super.onProgressUpdate(values);
+        mTextView.get().setText( "Napping...... " + values[0].toString() + " milliseconds!");
     }
 }
