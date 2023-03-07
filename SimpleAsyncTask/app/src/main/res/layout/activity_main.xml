@@ -36,7 +36,7 @@
         android:progress="0"
         android:indeterminateOnly="false"
         android:progressDrawable="@drawable/circle"
-        tools:progress="70"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -3,6 +3,7 @@ package com.example.simpleasynctask;
 import android.os.AsyncTask;
 import android.os.CountDownTimer;
 import android.util.Log;
+import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -27,7 +28,7 @@ public class SimpleAsyncTask extends AsyncTask<Void, Integer, String> {
     protected String doInBackground(Void... voids) {
         Random r = new Random();
         int n = r.nextInt(11);
-         int s = n * 500;
+         int s = n * 1500;
 
          try {
              publishProgress(s);
@@ -50,6 +51,7 @@ public class SimpleAsyncTask extends AsyncTask<Void, Integer, String> {
     protected void onProgressUpdate(Integer... values) {
         super.onProgressUpdate(values);
         mTextView.get().setText( "Napping...... " + values[0].toString() + " milliseconds!");
+        progressBar.get().setVisibility(View.VISIBLE);
         progressBar.get().setProgress(i);
         mCountDownTimer = new CountDownTimer(values[0], 1000 ) {
             @Override
