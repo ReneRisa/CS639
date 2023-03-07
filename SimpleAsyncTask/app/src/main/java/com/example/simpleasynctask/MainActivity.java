@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mTextView.setText(R.string.napping);
         // Start the AsyncTask.
         // The AsyncTask has a callback that will update the text view.
-        SimpleAsyncTask sat = new SimpleAsyncTask(mTextView);
+        SimpleAsyncTask sat = new SimpleAsyncTask(mTextView, progressBar);
         sat.execute();
         //new SimpleAsyncTask(mTextView).execute();
         //The execute() method is where you pass comma-separated parameters that are then passed into doInBackground() by the system.
