@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyFirebaseActivity</string>
+    <string name="employee_activity">Employee Activity</string>
 </resources>
