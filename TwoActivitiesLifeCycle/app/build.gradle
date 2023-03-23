@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.twoactivities'
+    namespace 'com.example.twoactivitieslifecycle'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.twoactivities"
+        applicationId "com.example.twoactivitieslifecycle"
         minSdk 26
         targetSdk 33
         versionCode 1
@@ -29,7 +29,6 @@ android {
 }
 
 dependencies {
-
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
