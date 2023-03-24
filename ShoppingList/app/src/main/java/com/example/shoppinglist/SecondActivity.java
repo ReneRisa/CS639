@@ -16,16 +16,18 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     public static final String EXTRA_REPLY = "com.example.android.shoppinglist.extra.REPLY";
 
     private ActivitySecondBinding binding;
-    private Button eggBtn;
-    private Button beansBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivitySecondBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
-        eggBtn = findViewById(R.id.eggsBtn);
         binding.eggsBtn.setOnClickListener(this);
+        binding.beansBtn.setOnClickListener(this);
+        binding.hummusBtn.setOnClickListener(this);
+        binding.tortillaBtn.setOnClickListener(this);
+        binding.pastaBtn.setOnClickListener(this);
     }
     @Override
     public void onClick(View view){
