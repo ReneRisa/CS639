@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Shopping List</string>
+    <string name="header_text">Shopping List</string>
+    <string name="add_item_button">Add Item</string>
+    <string name="header_text_list">List of Common Shopping Items</string>
+    <string name="beans">Beans</string>
+    <string name="eggs">Eggs</string>
 </resources>
