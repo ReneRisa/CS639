@@ -31,19 +31,19 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     }
     @Override
     public void onClick(View view){
-        switch(view.getId()){
+        /*switch(view.getId()){
             case R.id.eggsBtn:
                 Log.d(LOG_TAG, "egg btn");
             case R.id.hummusBtn:
                 Log.d(LOG_TAG, "hummus btn");
             case R.id.beansBtn:
                 Log.d(LOG_TAG, "beans btn");
-        }
+        }*/
         Log.d(LOG_TAG, "onClick Clicked");
         Button btn = (Button) findViewById(view.getId());
         String item = btn.getText().toString();
         Log.d(LOG_TAG, item);
-        //returnResult(item);
+        returnResult(item);
     }
     public void returnResult(String item){
         Intent replyIntent = new Intent();

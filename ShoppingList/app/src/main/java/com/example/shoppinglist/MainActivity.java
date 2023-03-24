@@ -9,29 +9,53 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.shoppinglist.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final int TEXT_REQUEST = 1;
-    private TextView mShoppingList1;
-    private TextView mShoppingList2;
-    private TextView mShoppingList3;
-    private TextView mShoppingList4;
-    private TextView mShoppingList5;
-    private TextView mShoppingList6;
-    private TextView mShoppingList7;
-    private TextView mShoppingList8;
-    private TextView mShoppingList9;
-    private TextView mShoppingList10;
 
+    private ActivityMainBinding binding;
+
+    public int i = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == TEXT_REQUEST){
+            if(resultCode == RESULT_OK){
+                String item = data.getStringExtra(SecondActivity.EXTRA_REPLY);
+
+                switch (i){
+                    case 1:
+                        binding.textView2.setText(item);
+                        i++;
+                        break;
+                    case 2:
+                        binding.textView3.setText(item);
+                        i++;
+                        break;
+                    case 3:
+                        binding.textView4.setText(item);
+                        i++;
+                        break;
+                }
+                //int i = 1;
+                //while(i < 11){
+                    //if(binding.textView2.getText().toString() == ""){
+
+                    //}
+                    //i++;
+                //}
+            }
+        }
     }
 
     public void addItem(View view) {
