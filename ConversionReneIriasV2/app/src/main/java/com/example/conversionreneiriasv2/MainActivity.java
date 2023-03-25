@@ -14,15 +14,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
     }
 
     public void currencyConvert(View view) {
 
-        double usd = Double.parseDouble(binding.editTextUSD.getText().toString());
-        if(usd != 0.00){
-            double eur = usd * 0.88;
-            binding.editTextEURO.setText(String.valueOf(eur));
+        if(!binding.editTextUSD.getText().toString().trim().isEmpty()){
+            double usd = Double.parseDouble(binding.editTextUSD.getText().toString());
+            if(usd != 0.00){
+                double eur = usd * 0.88;
+                binding.editTextEURO.setText(String.valueOf(eur));
+            }
         }
+
 
     }
 }
