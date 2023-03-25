@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ConversionReneIriasV2</string>
+    <string name="header_title">Currency Converter</string>
 </resources>
