@@ -9,176 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03992264-27ca-4d5f-a37f-7c1646bea0f6" name="Changes" comment="Uploading RecyclerView">
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/Employees.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/Screenshot 2023-03-25 030425.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/Screenshot_20230325_030207.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app-debug-androidTest.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/androidTest/java/com/example/myfirebaseactivity/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/java/com/example/myfirebaseactivity/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/java/com/example/myfirebaseactivity/EmployeeActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/java/com/example/myfirebaseactivity/ListAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/java/com/example/myfirebaseactivity/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/layout/activity_employee.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/layout/employeelist_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/app/src/test/java/com/example/myfirebaseactivity/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyFirebaseActivity-Exercise2/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/Employees.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/Screenshot 2023-03-25 030425.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/Screenshot_20230325_030207.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/google-services.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/androidTest/java/com/example/myfirebaseactivity/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/java/com/example/myfirebaseactivity/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/java/com/example/myfirebaseactivity/EmployeeActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/java/com/example/myfirebaseactivity/ListAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/java/com/example/myfirebaseactivity/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/layout/activity_employee.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/layout/employeelist_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/app/src/test/java/com/example/myfirebaseactivity/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/device-2023-03-25-030311Video.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyFirebaseActivity/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/recyclerview/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/recyclerview/FirstFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/recyclerview/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/recyclerview/SecondFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/recyclerview/WordListAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_add_for_fab.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_add_for_fab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_add_for_fab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_add_for_fab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_add_for_fab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_first.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_second.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/wordlist_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-w1240dp/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-w600dp/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/recyclerview/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codelab-friendlychat-android" beforeDir="false" />
-    </list>
+    <list default="true" id="03992264-27ca-4d5f-a37f-7c1646bea0f6" name="Changes" comment="Uploading RecyclerView" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -223,7 +54,7 @@
     "ScreenRecorder.SavePath": "C:\\Users\\risae\\OneDrive\\Desktop\\RemoteTest2023ReneRisa\\CS639\\RecyclerView\\device-2023-03-25-031134video.webm",
     "ScreenshotViewer.SavePath": "C:/Users/risae/OneDrive/Desktop/RemoteTest2023ReneRisa/CS639/RecyclerView",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/risae/OneDrive/Desktop/RemoteTest2023ReneRisa/CS639/RecyclerView"
+    "last_opened_file_path": "C:/Users/risae/OneDrive/Desktop/codelab-friendlychat-android-Exercise1"
   }
 }]]></component>
   <component name="RunManager">
@@ -281,9 +112,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
