@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("The read failed: " + error.getCode());
             }
         });
+        Log.i("Employee Activity", String.valueOf(mWordList));
         // Get a handle to the RecyclerView.
         mRecyclerView = binding.recyclerview;
         // Create an adapter and supply the data to be displayed.
