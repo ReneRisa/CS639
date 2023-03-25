@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ListView;
 
+import com.example.myfirebaseactivity.databinding.ActivityEmployeeBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -13,11 +16,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class EmployeeActivity extends AppCompatActivity {
-
+    private ActivityEmployeeBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_employee);
+        binding = ActivityEmployeeBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
         // Get an instance of the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         // Writing to database - key : message, value = hello, world.
@@ -26,7 +32,7 @@ public class EmployeeActivity extends AppCompatActivity {
         //Employee emp = new Employee("Pamela", "Escober");
         //myRef.push().setValue(emp);
 
-        // list of all elments in firebase
+        // list of all elements in firebase
         myRef = database.getReference().child("employees");
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
