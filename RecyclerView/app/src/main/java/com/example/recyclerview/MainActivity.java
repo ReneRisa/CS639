@@ -23,6 +23,7 @@ import android.view.MenuItem;
 import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String LOG_TAG = MainActivity.class.getSimpleName();
     private final LinkedList<String> mWordList = new LinkedList<>();
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
@@ -52,9 +53,12 @@ public class MainActivity extends AppCompatActivity {
         // Put initial data into the word list.
         for (int i = 0; i < 10; i++) {
             mWordList.addLast("Word " + i);
+
         }
+        System.out.println(mWordList);
+        System.out.println("ACA ESTOY");
         // Get a handle to the RecyclerView.
-        mRecyclerView = (RecyclerView) binding.recyclerview;
+        mRecyclerView = binding.recyclerview;
 // Create an adapter and supply the data to be displayed.
         mAdapter = new WordListAdapter(this, mWordList);
 // Connect the adapter with the RecyclerView.
