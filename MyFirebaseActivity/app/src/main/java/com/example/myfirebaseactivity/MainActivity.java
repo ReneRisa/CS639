@@ -27,7 +27,7 @@ import java.util.LinkedList;
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "Main Activity";
-    private final LinkedList<String> mWordList = new LinkedList<>();
+    public LinkedList<String> mWordList = new LinkedList<>();
     private ActivityMainBinding binding;
 
     private RecyclerView mRecyclerView;
@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
         //myRef.setValue("Hello World");
 
         //Add an employee
-        Employee emp = new Employee("gata", "berry");
-        myRef.push().setValue(emp);
+        //Employee emp = new Employee("gata", "berry");
+        //myRef.push().setValue(emp);
 
         // Read from the database
         // list of all elements in firebase
@@ -68,10 +68,19 @@ public class MainActivity extends AppCompatActivity {
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     emplo = (Employee) ds.getValue(Employee.class);
                     Log.i(TAG, counter + "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName());
-                    mWordList.addLast("Employee: ");
+                    mWordList.addLast( emplo.getFirstName() + emplo.getLastName());
+                    //addEmployee();
+                    System.out.println(mWordList);
                     counter += 1;
                 }
-
+                // Get a handle to the RecyclerView.
+                mRecyclerView = binding.recyclerview;
+                // Create an adapter and supply the data to be displayed.
+                mAdapter = new ListAdapter(MainActivity.this, mWordList);
+// Connect the adapter with the RecyclerView.
+                mRecyclerView.setAdapter(mAdapter);
+// Give the RecyclerView a default layout manager.
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
             }
 
             @Override
@@ -81,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("The read failed: " + error.getCode());
             }
 
+
         });
         /*for (int i = 0; i < 10; i++) {
             mWordList.addLast("Word " + i);
@@ -88,18 +98,14 @@ public class MainActivity extends AppCompatActivity {
         }*/
         System.out.println(mWordList);
         Log.i(TAG, String.valueOf(mWordList));
-        // Get a handle to the RecyclerView.
-        mRecyclerView = binding.recyclerview;
-        // Create an adapter and supply the data to be displayed.
-        mAdapter = new ListAdapter(this, mWordList);
-// Connect the adapter with the RecyclerView.
-        mRecyclerView.setAdapter(mAdapter);
-// Give the RecyclerView a default layout manager.
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
 
     public void employeeActivity(View view) {
         Intent intent = new Intent(this, EmployeeActivity.class);
         startActivity(intent);
+    }
+    public void addEmployee(){
+        mWordList.addLast("Employee: ");
     }
 }
