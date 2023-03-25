@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,8 +27,8 @@ import java.util.LinkedList;
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "Main Activity";
-    private ActivityMainBinding binding;
     private final LinkedList<String> mWordList = new LinkedList<>();
+    private ActivityMainBinding binding;
 
     private RecyclerView mRecyclerView;
     private ListAdapter mAdapter;
@@ -36,8 +37,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        View view = binding.getRoot();
-        setContentView(view);
+        setContentView(binding.getRoot());
         //btn.findViewById(R.id.button);
         // Write a message to the database
         // Get an instance of the database
@@ -47,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
         //myRef.setValue("Hello World");
 
-
+        //Add an employee
+        Employee emp = new Employee("gata", "berry");
+        myRef.push().setValue(emp);
 
         // Read from the database
         // list of all elements in firebase
@@ -65,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 int counter = 0;
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     emplo = (Employee) ds.getValue(Employee.class);
-                    Log.i("EMPLOYEEACTIVITY", counter + "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName());
+                    Log.i(TAG, counter + "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName());
                     mWordList.addLast("Employee: ");
                     counter += 1;
                 }
@@ -78,9 +80,14 @@ public class MainActivity extends AppCompatActivity {
                 Log.w(TAG, "Failed to read value.", error.toException());
                 System.out.println("The read failed: " + error.getCode());
             }
+
         });
+        /*for (int i = 0; i < 10; i++) {
+            mWordList.addLast("Word " + i);
+
+        }*/
         System.out.println(mWordList);
-        Log.i("Employee Activity", String.valueOf(mWordList));
+        Log.i(TAG, String.valueOf(mWordList));
         // Get a handle to the RecyclerView.
         mRecyclerView = binding.recyclerview;
         // Create an adapter and supply the data to be displayed.
