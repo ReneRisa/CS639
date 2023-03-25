@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     emplo = (Employee) ds.getValue(Employee.class);
                     Log.i("EMPLOYEEACTIVITY", counter + "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName());
-                    mWordList.addLast(emplo.getFirstName().toString());
+                    mWordList.addLast("Employee: ");
                     counter += 1;
                 }
 
@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("The read failed: " + error.getCode());
             }
         });
+        System.out.println(mWordList);
         Log.i("Employee Activity", String.valueOf(mWordList));
         // Get a handle to the RecyclerView.
         mRecyclerView = binding.recyclerview;
