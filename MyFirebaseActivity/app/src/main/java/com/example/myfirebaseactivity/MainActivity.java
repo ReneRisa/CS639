@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     emplo = (Employee) ds.getValue(Employee.class);
                     Log.i("EMPLOYEEACTIVITY", counter + "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName());
                     employeeList[counter] = "Firstname: ";
+                    System.out.println(employeeList[counter]);
                     counter += 1;
                 }
 
