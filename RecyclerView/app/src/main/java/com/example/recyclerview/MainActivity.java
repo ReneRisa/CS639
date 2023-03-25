@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             mWordList.addLast("Word " + i);
         }
         // Get a handle to the RecyclerView.
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+        mRecyclerView = (RecyclerView) binding.recyclerview;
 // Create an adapter and supply the data to be displayed.
         mAdapter = new WordListAdapter(this, mWordList);
 // Connect the adapter with the RecyclerView.
