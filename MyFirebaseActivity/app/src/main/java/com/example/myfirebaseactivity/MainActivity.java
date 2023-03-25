@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = "Main Activity";
     private ActivityEmployeeBinding binding;
 
-    String[] employeeList;
+    String[] employeeList = new String[50];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     emplo = (Employee) ds.getValue(Employee.class);
                     Log.i("EMPLOYEEACTIVITY", counter + "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName());
-                    employeeList[counter] = "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName();
+                    employeeList[counter] = "Firstname: ";
                     counter += 1;
                 }
 
