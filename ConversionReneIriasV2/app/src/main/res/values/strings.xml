@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">ConversionReneIriasV2</string>
     <string name="header_title">Currency Converter</string>
+    <string name="sub_header">Check rates for Dollar USD to EUR.</string>
+    <string name="usd">USD</string>
+    <string name="usd_amount">0.00</string>
+    <string name="eur">EUR</string>
+    <string name="eur_amount">0.00</string>
+    <string name="converted_amount">Converted Amount</string>
+    <string name="amount">Amount</string>
 </resources>
