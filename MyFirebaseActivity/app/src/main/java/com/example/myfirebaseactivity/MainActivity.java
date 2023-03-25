@@ -1,6 +1,8 @@
 package com.example.myfirebaseactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,23 +14,28 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.myfirebaseactivity.databinding.ActivityEmployeeBinding;
+import com.example.myfirebaseactivity.databinding.ActivityMainBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.LinkedList;
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "Main Activity";
-    private ActivityEmployeeBinding binding;
+    private ActivityMainBinding binding;
+    private final LinkedList<String> mWordList = new LinkedList<>();
 
-    String[] employeeList = new String[50];
+    private RecyclerView mRecyclerView;
+    private ListAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityEmployeeBinding.inflate(getLayoutInflater());
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
         //btn.findViewById(R.id.button);
@@ -59,8 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     emplo = (Employee) ds.getValue(Employee.class);
                     Log.i("EMPLOYEEACTIVITY", counter + "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName());
-                    employeeList[counter] = "Firstname: "+ emplo.getFirstName() + " Lastname: " + emplo.getLastName();
-                    System.out.println(employeeList[counter]);
+                    mWordList.addLast(emplo.getFirstName() + emplo.getLastName());
                     counter += 1;
                 }
 
@@ -73,9 +79,14 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("The read failed: " + error.getCode());
             }
         });
-        // adapter
-        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_main,employeeList);
-        binding.listaView.setAdapter(adapter);
+        // Get a handle to the RecyclerView.
+        mRecyclerView = binding.recyclerview;
+        // Create an adapter and supply the data to be displayed.
+        mAdapter = new ListAdapter(this, mWordList);
+// Connect the adapter with the RecyclerView.
+        mRecyclerView.setAdapter(mAdapter);
+// Give the RecyclerView a default layout manager.
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     public void employeeActivity(View view) {

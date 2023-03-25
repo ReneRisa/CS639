@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
         System.out.println(mWordList);
-        System.out.println("ACA ESTOY");
         // Get a handle to the RecyclerView.
         mRecyclerView = binding.recyclerview;
 // Create an adapter and supply the data to be displayed.
