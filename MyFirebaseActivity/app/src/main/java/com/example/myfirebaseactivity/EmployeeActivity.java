@@ -23,8 +23,8 @@ public class EmployeeActivity extends AppCompatActivity {
         // Writing to database - key : message, value = hello, world.
         DatabaseReference myRef = database.getReference("employees");
         //Add an employee
-        Employee emp = new Employee("Pamela", "Escober");
-        myRef.push().setValue(emp);
+        //Employee emp = new Employee("Pamela", "Escober");
+        //myRef.push().setValue(emp);
 
         // list of all elments in firebase
         myRef = database.getReference().child("employees");
