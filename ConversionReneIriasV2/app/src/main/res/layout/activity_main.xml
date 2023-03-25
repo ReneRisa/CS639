@@ -78,11 +78,13 @@
 
         <Button
             android:id="@+id/btnConvert"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
+            android:layout_margin="12dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@drawable/circle"
             android:onClick="currencyConvert"
-            android:src="@drawable/baseline_currency_exchange_24" />
+            app:icon="@drawable/baseline_currency_exchange_24" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -135,7 +137,7 @@
         android:layout_height="wrap_content"
         android:text="1 Dollar USD = 0.88 EUR"
         android:layout_marginStart="12dp"
-        android:padding="1dp"
+        android:paddingStart="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4">

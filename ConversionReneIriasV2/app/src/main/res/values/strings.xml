@@ -8,4 +8,5 @@
     <string name="eur_amount">0.00</string>
     <string name="converted_amount">Converted Amount</string>
     <string name="amount">Amount</string>
+    <string name="convertBtn">Convert</string>
 </resources>
