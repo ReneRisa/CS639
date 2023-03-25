@@ -17,8 +17,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void currencyConvert(View view) {
+
         double usd = Double.parseDouble(binding.editTextUSD.getText().toString());
-        double eur = usd * 0.88;
-        binding.editTextEURO.setText(String.valueOf(eur));
+        if(usd != 0.00){
+            double eur = usd * 0.88;
+            binding.editTextEURO.setText(String.valueOf(eur));
+        }
+
     }
 }
