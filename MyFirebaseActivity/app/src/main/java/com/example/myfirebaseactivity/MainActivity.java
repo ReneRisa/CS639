@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     emplo = (Employee) ds.getValue(Employee.class);
                     Log.i("EMPLOYEEACTIVITY", counter + "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName());
-                    mWordList.addLast(emplo.getFirstName() + emplo.getLastName());
+                    mWordList.addLast(emplo.getFirstName().toString());
                     counter += 1;
                 }
 
