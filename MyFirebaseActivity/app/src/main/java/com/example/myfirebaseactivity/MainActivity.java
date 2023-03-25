@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     emplo = (Employee) ds.getValue(Employee.class);
                     Log.i("EMPLOYEEACTIVITY", counter + "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName());
-                    employeeList[counter] = "Firstname: ";
+                    employeeList[counter] = "Firstname: "+ emplo.getFirstName() + " Lastname: " + emplo.getLastName();
                     System.out.println(employeeList[counter]);
                     counter += 1;
                 }
@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         // adapter
-        //ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_main,employeeList);
-        //binding.listaView.setAdapter(adapter);
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_main,employeeList);
+        binding.listaView.setAdapter(adapter);
     }
 
     public void employeeActivity(View view) {
