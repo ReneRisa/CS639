@@ -47,10 +47,16 @@ public class MainActivity extends AppCompatActivity {
 
         //myRef.setValue("Hello World");
 
-        //Add an employee
-        //Employee emp = new Employee("gata", "berry");
-        //myRef.push().setValue(emp);
 
+        DatabaseReference finalMyRef = myRef;
+        binding.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mWordList.clear();
+                Employee emp = new Employee(binding.lName.getText().toString(), binding.fName.getText().toString());
+                finalMyRef.push().setValue(emp);
+            }
+        });
         // Read from the database
         // list of all elements in firebase
         myRef = database.getReference().child("employees");
@@ -68,9 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 for(DataSnapshot ds : dataSnapshot.getChildren()){
                     emplo = (Employee) ds.getValue(Employee.class);
                     Log.i(TAG, counter + "Firstname: " + emplo.getFirstName() + " Lastname: " + emplo.getLastName());
-                    mWordList.addLast( emplo.getFirstName() + emplo.getLastName());
-                    //addEmployee();
-                    System.out.println(mWordList);
+                    mWordList.addLast( emplo.getFirstName() + "  " + emplo.getLastName());
                     counter += 1;
                 }
                 // Get a handle to the RecyclerView.
@@ -92,20 +96,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
-        /*for (int i = 0; i < 10; i++) {
-            mWordList.addLast("Word " + i);
-
-        }*/
-        System.out.println(mWordList);
-        Log.i(TAG, String.valueOf(mWordList));
 
     }
 
     public void employeeActivity(View view) {
-        Intent intent = new Intent(this, EmployeeActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, EmployeeActivity.class);
+        //startActivity(intent);
+        //Add an employee
+
     }
-    public void addEmployee(){
-        mWordList.addLast("Employee: ");
-    }
+
 }
