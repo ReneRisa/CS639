@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03992264-27ca-4d5f-a37f-7c1646bea0f6" name="Changes" comment="Uploading RecyclerView" />
+    <list default="true" id="03992264-27ca-4d5f-a37f-7c1646bea0f6" name="Changes" comment="Uploading RecyclerView">
+      <change beforePath="$PROJECT_DIR$/../ShoppingList/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +56,7 @@
     "ScreenRecorder.SavePath": "C:\\Users\\risae\\OneDrive\\Desktop\\RemoteTest2023ReneRisa\\CS639\\RecyclerView\\device-2023-03-25-031134video.webm",
     "ScreenshotViewer.SavePath": "C:/Users/risae/OneDrive/Desktop/RemoteTest2023ReneRisa/CS639/RecyclerView",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/risae/OneDrive/Desktop/codelab-friendlychat-android-Exercise1"
+    "last_opened_file_path": "C:/Users/risae/OneDrive/Desktop/RemoteTest2023ReneRisa/CS639/RecyclerView"
   }
 }]]></component>
   <component name="RunManager">
