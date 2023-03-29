@@ -2,6 +2,8 @@ package com.example.shoppinglist;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,19 +13,31 @@ import android.widget.TextView;
 
 import com.example.shoppinglist.databinding.ActivityMainBinding;
 
+import java.util.LinkedList;
+
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final int TEXT_REQUEST = 1;
 
     private ActivityMainBinding binding;
 
+    private final LinkedList<String> mWordList = new LinkedList<>();
+    private RecyclerView mRecyclerView;
+    private WordListAdapter mAdapter;
     public int i = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        View view = binding.getRoot();
-        setContentView(view);
+        setContentView(binding.getRoot());
+        //Get a handle to the RecyclerViewer
+        mRecyclerView = binding.recyclerview;
+        //create an adapter and supply the data to be displayed
+        mAdapter = new WordListAdapter(this, mWordList);
+        //Connect the adapter with the RecyclerView
+        mRecyclerView.setAdapter(mAdapter);
+        // Give the RecyclerView  a default layout manager
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     @Override
@@ -32,7 +46,10 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == TEXT_REQUEST){
             if(resultCode == RESULT_OK){
                 String item = data.getStringExtra(SecondActivity.EXTRA_REPLY);
-
+                int wordListSize = mWordList.size();
+                //Add a new word to the worList
+                mWordList.addLast(item);
+                Log.i(LOG_TAG, String.valueOf(mWordList));
                 switch (i){
                     case 1:
                         binding.textView2.setText(item);
@@ -40,10 +57,6 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 2:
                         binding.textView3.setText(item);
-                        i++;
-                        break;
-                    case 3:
-                        binding.textView4.setText(item);
                         i++;
                         break;
                 }
