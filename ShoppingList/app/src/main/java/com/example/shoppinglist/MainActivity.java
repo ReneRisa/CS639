@@ -30,14 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        //Get a handle to the RecyclerViewer
-        mRecyclerView = binding.recyclerview;
-        //create an adapter and supply the data to be displayed
-        mAdapter = new WordListAdapter(this, mWordList);
-        //Connect the adapter with the RecyclerView
-        mRecyclerView.setAdapter(mAdapter);
-        // Give the RecyclerView  a default layout manager
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     @Override
@@ -50,16 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 //Add a new word to the worList
                 mWordList.addLast(item);
                 Log.i(LOG_TAG, String.valueOf(mWordList));
-                switch (i){
-                    case 1:
-                        binding.textView2.setText(item);
-                        i++;
-                        break;
-                    case 2:
-                        binding.textView3.setText(item);
-                        i++;
-                        break;
-                }
+
                 //Get a handle to the RecyclerViewer
                 mRecyclerView = binding.recyclerview;
                 //create an adapter and supply the data to be displayed
@@ -68,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
                 mRecyclerView.setAdapter(mAdapter);
                 // Give the RecyclerView  a default layout manager
                 mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+                // Scroll to the bottom
+                mRecyclerView.smoothScrollToPosition(wordListSize);
                 //int i = 1;
                 //while(i < 11){
                     //if(binding.textView2.getText().toString() == ""){

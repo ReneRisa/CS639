@@ -44,7 +44,8 @@
         android:text="@string/header_text_list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="28dp"/>
 
     <Button
         android:id="@+id/eggsBtn"
