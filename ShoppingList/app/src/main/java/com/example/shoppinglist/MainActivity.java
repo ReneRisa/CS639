@@ -60,6 +60,14 @@ public class MainActivity extends AppCompatActivity {
                         i++;
                         break;
                 }
+                //Get a handle to the RecyclerViewer
+                mRecyclerView = binding.recyclerview;
+                //create an adapter and supply the data to be displayed
+                mAdapter = new WordListAdapter(this, mWordList);
+                //Connect the adapter with the RecyclerView
+                mRecyclerView.setAdapter(mAdapter);
+                // Give the RecyclerView  a default layout manager
+                mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
                 //int i = 1;
                 //while(i < 11){
                     //if(binding.textView2.getText().toString() == ""){
