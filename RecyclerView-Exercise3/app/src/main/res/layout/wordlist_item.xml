@@ -7,6 +7,5 @@
 
     <TextView
         android:id="@+id/word"
-        android:text="hello"
         style="@style/word_title" />
 </LinearLayout>
